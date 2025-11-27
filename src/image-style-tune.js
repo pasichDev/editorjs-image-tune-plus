@@ -7,12 +7,16 @@ export default class ImageStyleTune {
     return true
   }
 
+  static get saveTuneId () {
+    return 'imageTunePlus'
+  }
+
   constructor ({ api, data, block, config }) {
     this.api = api
     this.block = block
     this.config = config || {}
 
-    this.state = new TuneState(data)
+    this.state = new TuneState(data || {})
 
     this.buttons = new TuneButtons(api, this.state, () => this._apply())
   }
@@ -29,7 +33,6 @@ export default class ImageStyleTune {
 
   _apply () {
     DomApplier.apply(this.block.holder, this.state, this.block.data)
-
     this.block.dispatchChange()
   }
 }
