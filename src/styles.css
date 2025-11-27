@@ -1,0 +1,40 @@
+.mn-img--align-left img {
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.mn-img--align-center img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mn-img--align-right img {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+.mn-img--ratio-16-9 img {
+  aspect-ratio: 16/9;
+}
+
+.mn-img--ratio-4-3 img {
+  aspect-ratio: 4/3;
+}
+
+.mn-img--ratio-1-1 img {
+  aspect-ratio: 1/1;
+}
+.mn-img--rounded-0 img {
+  border-radius: 0;
+}
+.mn-img--rounded-8 img {
+  border-radius: 8px;
+}
+.mn-img--rounded-16 img {
+  border-radius: 16px;
+}
+.mn-img--rounded-24 img {
+  border-radius: 24px;
+}

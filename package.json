@@ -1,0 +1,50 @@
+{
+  "name": "editorjs-image-tune-plus",
+  "version": "1.0.0",
+  "description": "Advanced image style tune for Editor.js (width, ratio, alignment, borders)",
+  "main": "dist/editorjs-image-tune-plus.umd.js",
+  "module": "dist/editorjs-image-tune-plus.esm.js",
+  "jsdelivr": "dist/editorjs-image-tune-plus.umd.js",
+  "unpkg": "dist/editorjs-image-tune-plus.umd.js",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "vite",
+    "demo": "vite demo",
+    "prepare": "npm run build"
+  },
+  "peerDependencies": {
+    "@editorjs/editorjs": "^2.0.0",
+    "@editorjs/image": "^2.0.0"
+  },
+  "keywords": [
+    "editorjs",
+    "editor.js",
+    "image",
+    "styler",
+    "tune",
+    "plugin",
+    "editorjs-plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pasichDev/editorjs-image-tune-plus.git"
+  },
+  "homepage": "https://github.com/pasichDev/editorjs-image-tune-plus#readme",
+  "bugs": {
+    "url": "https://github.com/pasichDev/editorjs-image-tune-plus/issues"
+  },
+  "author": "pasichDev",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.2.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.14.0",
+    "rollup-plugin-postcss": "^4.0.2"
+  }
+}

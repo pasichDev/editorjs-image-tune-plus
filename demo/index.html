@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Tune Plus Demo</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/image@latest"></script>
+    <script src="../dist/image-tune-plus.umd.js"></script>
+  </head>
+
+  <body>
+    <div id="editorjs" style="padding: 20px"></div>
+
+    <script>
+      const editor = new EditorJS({
+        holder: "editorjs",
+
+        data: {
+          blocks: [
+            {
+              type: "image",
+              data: {
+                file: {
+                  url: "https://picsum.photos/700/400",
+                },
+              },
+            },
+          ],
+        },
+
+        tools: {
+          image: {
+            class: ImageTool,
+            inlineToolbar: true,
+            tunes: ["imageStyle"],
+            config: {
+              caption: false,
+              uploader: {
+                uploadByFile: async (file) => ({
+                  success: 1,
+                  file: {
+                    url: URL.createObjectURL(file),
+                  },
+                }),
+              },
+            },
+          },
+
+          imageStyle: {
+            class: ImageTunePlus,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
