@@ -1,7 +1,7 @@
 import TuneState from './utils/TuneState.js'
 import TuneButtons from './utils/TuneButtons.js'
 import DomApplier from './utils/DomApplier.js'
-export default class ImageStyleTune {
+export default class ImageTunePlus {
   static get isTune () {
     return true
   }

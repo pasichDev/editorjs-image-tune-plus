@@ -1,4 +1,4 @@
-import ImageStyleTune from './image-style-tune.js'
+import ImageTunePlus from './image-tune-plus.js'
 import './styles.css'
 
-export default ImageStyleTune
+export default ImageTunePlus
