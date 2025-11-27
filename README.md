@@ -1,10 +1,21 @@
 # Image Tune Plus — Advanced Image Styling Tune for Editor.js
+<!-- Badges -->
+[![NPM Version](https://img.shields.io/npm/v/editorjs-image-tune-plus.svg)](https://www.npmjs.com/package/editorjs-image-tune-plus)
+[![License](https://img.shields.io/npm/l/editorjs-image-tune-plus)](LICENSE)
 
 Tool for the [Editor.js](https://editorjs.io).
 
 This plugin is compatible only with the official [@editorjs/image](https://github.com/editor-js/image).
 
 **Image Tune Plus** is an Editor.js Tune plugin that adds advanced image styling: width, aspect ratio, alignment, rounded corners, and other decorative parameters. It was created to fix the lack of proper image styling controls in mobile layouts, where images often do not scale or align correctly out of the box.
+
+## Demo
+
+<!-- markdownlint-disable MD033 -->
+
+  ![Demo](/assets/image_tune_plus.gif)
+
+<!-- markdownlint-enable MD033 -->
 
 ## Features
 

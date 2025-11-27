@@ -2,17 +2,18 @@
   "name": "editorjs-image-tune-plus",
   "version": "1.0.0",
   "description": "Advanced image style tune for Editor.js (width, ratio, alignment, borders)",
-  "main": "dist/editorjs-image-tune-plus.umd.js",
-  "module": "dist/editorjs-image-tune-plus.esm.js",
-  "jsdelivr": "dist/editorjs-image-tune-plus.umd.js",
-  "unpkg": "dist/editorjs-image-tune-plus.umd.js",
-  "type": "module",
-  "sideEffects": false,
+  "main": "dist/image-tune-plus.umd.js",
+  "module": "dist/image-tune-plus.esm.js",
+  "unpkg": "dist/image-tune-plus.umd.js",
+  "jsdelivr": "dist/image-tune-plus.umd.js",
+  "sideEffects": [
+    "*.css"
+  ],
   "files": [
     "dist/"
   ],
   "scripts": {
-    "build": "rollup -c",
+    "build": "npx rollup -c --bundleConfigAsCjs",
     "dev": "vite",
     "demo": "vite demo",
     "prepare": "npm run build"
@@ -44,6 +45,9 @@
     "@rollup/plugin-commonjs": "^25.0.0",
     "@rollup/plugin-node-resolve": "^15.2.0",
     "@rollup/plugin-terser": "^0.4.4",
+    "autoprefixer": "^10.4.22",
+    "postcss": "^8.5.6",
+    "postcss-import": "^16.1.1",
     "rollup": "^4.14.0",
     "rollup-plugin-postcss": "^4.0.2"
   }
