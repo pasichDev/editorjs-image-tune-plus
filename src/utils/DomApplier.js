@@ -1,11 +1,13 @@
 export default class DomApplier {
-  static apply (blockHolder, state) {
-    if (!blockHolder) return
-    const imgContainer = blockHolder.querySelector('.image-tool')
+  static apply (block, state) {
+    const holder = block.holder
+    if (!holder) return
+
+    const imgContainer = holder.querySelector('.image-tool')
     if (!imgContainer) return
 
-    // cleanup
-    const classes = [
+    // reset classes
+    imgContainer.classList.remove(
       'mn-img--align-left',
       'mn-img--align-center',
       'mn-img--align-right',
@@ -16,24 +18,18 @@ export default class DomApplier {
       'mn-img--rounded-8',
       'mn-img--rounded-16',
       'mn-img--rounded-24'
-    ]
+    )
 
-    imgContainer.classList.remove(...classes)
-
-    // align
+    // apply classes
     imgContainer.classList.add(`mn-img--align-${state.align}`)
-
-    // ratio
     if (state.ratio) {
       imgContainer.classList.add(
         `mn-img--ratio-${state.ratio.replace(':', '-')}`
       )
     }
-
-    // rounded
     imgContainer.classList.add(`mn-img--rounded-${state.rounded}`)
 
-    // width
+    // image styles
     const img = imgContainer.querySelector('img')
     if (img) {
       img.style.maxWidth = `${state.width}%`
