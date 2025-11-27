@@ -1,6 +1,6 @@
 {
   "name": "editorjs-image-tune-plus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Advanced image style tune for Editor.js (width, ratio, alignment, borders)",
   "main": "dist/image-tune-plus.umd.js",
   "module": "dist/image-tune-plus.esm.js",
