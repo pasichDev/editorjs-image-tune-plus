@@ -21,12 +21,10 @@
 
 .mn-img--ratio-4-3 img {
   aspect-ratio: 4/3;
-  object-fit: contain;
 }
 
 .mn-img--ratio-1-1 img {
   aspect-ratio: 1/1;
-  object-fit: contain;
 }
 .mn-img--rounded-0 img {
   border-radius: 0;
